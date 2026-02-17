@@ -1,0 +1,38 @@
+.memory-display h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.memory-cell {
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.memory-cell:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+.cell-index {
+  font-size: 11px;
+  color: #999;
+  font-weight: 600;
+}
+
+.cell-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
+  font-family: 'Courier New', monospace;
+  margin-top: 4px;
+}
