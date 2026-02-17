@@ -1,0 +1,72 @@
+.block-canvas h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.blocks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.block-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.block-item.active {
+  background: #E3F2FD;
+  border-left: 4px solid #2196F3;
+  padding-left: 4px;
+}
+
+.block {
+  flex: 1;
+  padding: 12px 16px;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.block-type {
+  font-weight: bold;
+}
+
+.block-param {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.block-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.config-btn,
+.delete-btn {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 4px;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.config-btn:hover {
+  background: #FF9800;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #FF5722;
+  color: white;
+}
